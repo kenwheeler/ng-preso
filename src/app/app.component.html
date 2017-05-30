@@ -1,19 +1,121 @@
 <app-deck>
   <app-slide>
-    <img src="https://angular.io/resources/images/logos/angular/angular.svg" width="150px" />
+    <img src="https://angular.io/resources/images/logos/angular/angular.svg" width="300px" />
     <h1>A REACT DEV</h1>
-    <h1 style="font-size: 48px;">IN ANGULAR LAND</h1>
+    <h1 style="font-size: 5vw;">IN ANGULAR LAND</h1>
   </app-slide>
   <app-slide>
+    <img src="https://pbs.twimg.com/profile_images/851592418193494018/nQWWl1lw.jpg" style="margin-bottom: 40px; width: 300px;">
+    <h1>Hi I'm Ken</h1>
+    <h3>@ken_wheeler</h3>
+  </app-slide>
+  <app-slide bgColor="#DD0031">
+    <h2>WHY AM I HERE?</h2>
+  </app-slide>
+  <app-slide>
+    <img src="https://pbs.twimg.com/profile_images/802626927391608833/MmHHmVfD.jpg" style="margin-bottom: 40px; width: 350px;"
+    />
+    <h2>You know this chap right?</h2>
+  </app-slide>
+  <app-slide>
+    <h2>My experience with Angular</h2>
+  </app-slide>
+  <app-slide>
+    <img src="assets/notbad.gif" width="100%" />
+  </app-slide>
+  <app-slide>
+    <img src="assets/kid.gif" width="60%" style="margin-bottom: 40px;" />
+    <h2>WHAT I LIKED</h2>
+  </app-slide>
+  <app-slide bgColor="white" color="#1454AD">
+    <ul>
+      <li>It's a framework, not a library</li>
+      <li>That AOT tho</li>
+      <li>It's very platform focused</li>
+      <li>The new component model</li>
+      <li>The community seems great</li>
+    </ul>
+  </app-slide>
+  <app-slide>
+    <img src="assets/draper.gif" width="60%" style="margin-bottom: 40px;" />
+    <h2>Why aren't you all on ng-cruise?</h2>
+  </app-slide>
+  <app-slide bgColor="white" color="#1454AD">
+    <h2 style="margin-bottom: 40px;">TypeScript</h2>
+    <ul>
+      <li>Finally feels "right"</li>
+      <li>Really helpful IDE hinting</li>
+      <li>Compiler + types + lint</li>
+    </ul>
+  </app-slide>
+  <app-slide bgColor="white" color="#1454AD">
+    <h2 style="margin-bottom: 40px;">DI</h2>
+    <ul>
+      <li>Feels kind of redundant at first</li>
+      <li>Usefulness seems to increase at scale</li>
+      <li>Clear path for provision</li>
+    </ul>
+  </app-slide>
+  <app-slide bgColor="black">
     <pre>
-      <code class="language-javascript">
-var a = 5;
-if (a = 5) {{ '{' }}
-  return;
-{{ '}' }}</code>
+<code class="language-javascript">export class MyComponent {{ '{' }}
+  constructor(private store: Store{{ '<' }}AppState{{ '>' }}) {{ '{' }}
+    this.store.select('posts');
+  {{ '}' }}
+{{ '}' }}
+// VS
+return (
+  {{ '<' }}Provider store={{ '{' }}store{{ '}' }}/{{ '>' }}
+);
+// ...
+connect(state => state)(Component)</code>
     </pre>
   </app-slide>
+  <app-slide bgColor="white" color="#1454AD">
+    <h2 style="margin-bottom: 40px;">ngrx</h2>
+    <ul>
+      <li>Coming from React/Redux, felt at home</li>
+      <li>Great with TypeScript</li>
+      <li>store.select returns Observable</li>
+    </ul>
+  </app-slide>
+  <app-slide bgColor="white" color="#1454AD">
+    <h2 style="margin-bottom: 40px;">RxJS</h2>
+    <ul>
+      <li>I use redux-observable with React</li>
+      <li>Feels easy to integrate</li>
+      <li>Observable/onPush/async pipe feels powerful</li>
+    </ul>
+  </app-slide>
+  <app-slide bgColor="white" color="#1454AD">
+    <h2 style="margin-bottom: 40px;">Other Stuff</h2>
+    <ul>
+      <li>Animations</li>
+      <li>Pipes</li>
+      <li>Lifecycle Methods</li>
+      <li>Testing Focus</li>
+    </ul>
+  </app-slide>
+  <app-slide bgColor="#DD0031">
+    <img src="assets/nah.gif" width="60%" style="margin-bottom: 40px;" />
+    <h2>What I did not like</h2>
+  </app-slide>
+  <app-slide bgColor="#1454AD" color="white">
+    <ul>
+      <li>Templates don't escape curly braces</li>
+      <li>No dynamic content projection</li>
+      <li>New framework with the same name</li>
+    </ul>
+  </app-slide>
   <app-slide>
-    <h1>Slide 3</h1>
+    <h1>So what did I end up building?</h1>
+  </app-slide>
+  <app-slide bgColor="#DD0031">
+    <img src="assets/ohshit.gif" width="60%" style="margin-bottom: 40px;" />
+    <h3>THIS ENTIRE PRESENTATION</h3>
+  </app-slide>
+  <app-slide>
+    <h1>ng-preso</h1>
+    <p>github.com/kenwheeler/ng-preso</p>
   </app-slide>
 </app-deck>

@@ -3,6 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import {
   Component,
   AfterContentInit,
+  AfterViewChecked,
   ChangeDetectionStrategy,
   ContentChildren,
   QueryList,
@@ -23,7 +24,7 @@ interface AppState {
   template: `<ng-content></ng-content>`,
   styleUrls: ['./deck.component.css']
 })
-export class DeckComponent implements AfterContentInit {
+export class DeckComponent implements AfterContentInit, AfterViewChecked {
   @ContentChildren(SlideComponent) slides: QueryList<SlideComponent>;
 
   private displaySlide: SlideComponent;
@@ -71,6 +72,9 @@ export class DeckComponent implements AfterContentInit {
   handleSlides() {
     this.slides.forEach((slide, index) => {
       slide.active = index === this.slideRef;
+      if (slide.active) {
+        document.body.style.background = slide.bgColor;
+      }
     });
   }
 

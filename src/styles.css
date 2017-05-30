@@ -9,15 +9,49 @@ html, body {
   color: white;
 }
 
+body {
+  transition: background 500ms ease-in-out;
+}
+
 h1 {
-  font-size: 66px;
+  font-size: 8vw;
   margin: 0.15em;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 7vw;
+  margin: 0.15em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 5vw;
+  margin: 0.15em;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 3vw;
+}
+
+li {
+  font-size: 4vw;
+  text-align: left;
+  margin: 40px 0px;
 }
 
 h1.red {
   color: #DD0031;
+}
+
+pre {
+  width: 100%;
+}
+
+code {
+  font-size: 2vw;
 }
 
 * {

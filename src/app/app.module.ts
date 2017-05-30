@@ -15,7 +15,7 @@ import { slideReducer } from './reducer';
   declarations: [
     AppComponent,
     DeckComponent,
-    SlideComponent
+    SlideComponent,
   ],
   imports: [
     BrowserModule,
