@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #1454AD;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 66px;
+  margin: 0.15em;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+h1.red {
+  color: #DD0031;
+}
+
+* {
+  box-sizing: border-box;
+}
